@@ -2,7 +2,7 @@ import { data } from '../../data'
 import { Linkedin, Github, Instagram } from 'lucide-react'
 import { FaShopify, FaBehance } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-
+import Me from '../../assets/images/me.png'
 export default function Footer() {
   const { contacts } = data
 
@@ -37,16 +37,16 @@ export default function Footer() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => (window.location.href = 'mailto:' + contacts.email)}
-            className="mt-6 bg-[#111] text-white px-6 py-3 rounded-md font-medium shadow-md"
+            className="mt-6 bg-[#111] text-white px-6 py-3 rounded-md font-medium"
           >
             Let’s Work Together
           </motion.button>
         </motion.div>
 
         <motion.img
-          src="/portfolio-preview.png"
+          src={Me}
           alt="Portfolio showcase"
-          className="w-64 sm:w-80 rounded-lg shadow-lg"
+          className="w-64 sm:w-80 rounded-lg "
           initial={{ x: 40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3 }}

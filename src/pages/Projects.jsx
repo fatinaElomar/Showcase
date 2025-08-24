@@ -22,8 +22,19 @@ export default function Projects() {
   const [filter, setFilter] = useState('All')
   const items = useMemo(() => data.projects.filter(p => filter === 'All' || p.category === filter), [filter])
 
-  // Color overlays with different opacities
-  const colorOverlays = ["bg-indigo-500/40","bg-purple-500/40","bg-orange-500/40","bg-pink-500/40","bg-green-500/40","bg-teal-500/40"]
+  // Pastel color overlays with adjusted opacities
+  const colorOverlays = [
+    "bg-[#FFD8A9]/60", // soft peach
+    "bg-[#FFC1C1]/60", // pastel pink
+    "bg-[#A9E6FF]/60", // light aqua
+    "bg-[#a678f6]/50", // replaced purple
+    "bg-[#c5d7c5]/60", // replaced green
+    "bg-[#e7d6c9]/60", // replaced beige
+    "bg-[#FBCFFB]/60", // light magenta
+    "bg-[#FFE4B5]/60", // light moccasin
+    "bg-[#E0CFFF]/60", // lavender
+    "bg-[#D9F9D9]/60"  // mint
+  ]
 
   const sizeClasses = ["row-span-2","col-span-2","row-span-1 col-span-1","row-span-2 col-span-2","row-span-1 col-span-1","row-span-2"]
 

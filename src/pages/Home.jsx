@@ -3,6 +3,7 @@ import LogoMarquee from '../components/sections/LogoMarquee'
 import Features from '../components/sections/Features'
 import ShowcaseSticky from '../components/sections/ShowcaseSticky'
 import Footer from '../components/sections/Footer'
+import Testimonials from './testimonials'
 
 export default function Home(){
   return (<>
@@ -10,7 +11,7 @@ export default function Home(){
     <LogoMarquee />
     <Features />
     <ShowcaseSticky />
-    <Features />
+    <Testimonials />
    
   </>)
 }

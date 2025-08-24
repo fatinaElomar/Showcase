@@ -9,8 +9,16 @@ const row1 = selectedProjects.slice(0, Math.ceil(selectedProjects.length / 2));
 const row2 = selectedProjects.slice(Math.ceil(selectedProjects.length / 2));
 
 // Pastel background colors
-const pastelColors = ["#FFD8A9", "#FFC1C1", "#A9E6FF", "#C7D2FE", "#D9F9D9", "#FBCFFB", "#FFE4B5", "#E0CFFF"];
-
+const pastelColors = [
+  "#FFD8A9", // peach
+  "#FFC1C1", // light pink
+  "#c5d7c5", //  green
+  "#c9aff6", //  purple
+  "#D9F9D9", // orange
+  "#FBCFFB", // light magenta
+  "#FFE4B5", // moccasin
+  "#E0CFFF"  // lavender
+];
 export default function ShowcaseSticky() {
   const [widthRow1, setWidthRow1] = useState(0);
   const [widthRow2, setWidthRow2] = useState(0);
