@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
+import { ArrowUpRight } from "lucide-react"; // for arrow icon
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -27,35 +28,49 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50">
-      <motion.div style={{ scaleX }} className="h-1 bg-ink origin-left" />
-      <div className="backdrop-blur bg-white/70 border-b border-gray-100">
+      {/* Scroll progress bar */}
+      <motion.div style={{ scaleX }} className="h-1 bg-black origin-left" />
+
+      <div className="backdrop-blur">
         <nav className="container-responsive flex items-center justify-between py-4">
-          <Link to="/" className="font-extrabold text-xl tracking-tight">
+          
+          {/* Logo */}
+          <Link to="/" className="font-extrabold text-2xl tracking-tight">
             Fatina
           </Link>
-          <div className="hidden lg:flex items-center gap-2">
-            {links.map((l) => (
-              <NavLink
-                key={l.to}
-                to={l.to}
-                className={({ isActive }) =>
-                  "px-3 py-2 rounded-lg hover:bg-gray-100 " +
-                  (isActive ? "text-accent" : "")
-                }
-              >
-                {l.label}
-              </NavLink>
-            ))}
-            <a
-              href="#contact"
-              class="relative border bg-gradient-to-r from-purple-600 to-purple-400 text-white 
-         px-6 py-3 rounded-[1.7rem] font-semibold 
-         transition-all duration-300 ease-out 
-         bg-[length:200%_200%] hover:bg-[position:100%_0%]"
-            >
-              Contact
-            </a>
+
+          {/* Center pill navigation */}
+          <div className="hidden lg:flex items-center">
+            <div className="flex  rounded-full px-2 py-1">
+              {links.map((l) => (
+                <NavLink
+                  key={l.to}
+                  to={l.to}
+                  className={({ isActive }) =>
+                    "px-5 py-2 rounded-full font-medium transition " +
+                    (isActive
+                      ? "bg-white text-black shadow-sm"
+                      : "text-gray-700 hover:text-black")
+                  }
+                >
+                  {l.label}
+                </NavLink>
+              ))}
+            </div>
           </div>
+
+          {/* CTA button */}
+          <a
+            href="#contact"
+            className="hidden lg:flex items-center gap-3  bg-[#a678f6] text-[#ffffff] font-semibold px-6 py-3 rounded-full" 
+          >
+           Contact me
+            <span className=" text-white p-1.5 rounded-full">
+              <ArrowUpRight size={16} />
+            </span>
+          </a>
+
+          {/* Mobile toggle */}
           <button
             onClick={() => setOpen((v) => !v)}
             className="lg:hidden p-2 rounded-lg border border-gray-200"
@@ -65,6 +80,7 @@ export default function Nav() {
         </nav>
       </div>
 
+      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -87,9 +103,9 @@ export default function Nav() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="px-3 py-3 rounded-lg bg-ink text-white text-center"
+              className="px-3 py-3 rounded-lg bg-black text-white text-center"
             >
-              Contact
+              Book a call
             </a>
             <button
               onClick={() => setOpen(false)}

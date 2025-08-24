@@ -1,10 +1,15 @@
 import { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { data } from "../../data";
-import { Link } from "react-router-dom";
 
-const row1 = data.projects.slice(0, Math.ceil(data.projects.length / 2));
-const row2 = data.projects.slice(Math.ceil(data.projects.length / 2));
+const selectedProjects = data.projects.slice(0, 8);
+
+// Split into two rows
+const row1 = selectedProjects.slice(0, Math.ceil(selectedProjects.length / 2));
+const row2 = selectedProjects.slice(Math.ceil(selectedProjects.length / 2));
+
+// Pastel background colors
+const pastelColors = ["#FFD8A9", "#FFC1C1", "#A9E6FF", "#C7D2FE", "#D9F9D9", "#FBCFFB", "#FFE4B5", "#E0CFFF"];
 
 export default function ShowcaseSticky() {
   const [widthRow1, setWidthRow1] = useState(0);
@@ -14,74 +19,94 @@ export default function ShowcaseSticky() {
   const row2Ref = useRef(null);
 
   useEffect(() => {
-    if (row1Ref.current) setWidthRow1(row1Ref.current.scrollWidth / 2);
-    if (row2Ref.current) setWidthRow2(row2Ref.current.scrollWidth / 2);
+    const updateWidths = () => {
+      if (row1Ref.current) setWidthRow1(row1Ref.current.scrollWidth / 2);
+      if (row2Ref.current) setWidthRow2(row2Ref.current.scrollWidth / 2);
+    };
+
+    // Call initially after render
+    setTimeout(updateWidths, 100);
+
+    // Update on resize
+    window.addEventListener("resize", updateWidths);
+    return () => window.removeEventListener("resize", updateWidths);
   }, []);
 
-  const speed = 40; // higher = slower
+  const speed = 100; // slower movement
+
+  const Card = ({ project, color }) => (
+    <div
+      className="min-w-[250px] md:min-w-[300px] lg:min-w-[350px] h-[200px] rounded-2xl p-4 flex flex-col justify-between shadow-md"
+      style={{ backgroundColor: color }}
+    >
+      {project.logo && (
+        <img src={project.logo} alt="logo" className="w-8 h-8 mb-1 object-contain" />
+      )}
+
+      {project.number && (
+        <h2 className="text-2xl md:text-3xl font-bold mb-1">{project.number}</h2>
+      )}
+
+      {project.title && (
+        <h3 className="text-lg md:text-xl font-semibold mb-1">{project.title}</h3>
+      )}
+
+      {project.summary && <p className="text-sm md:text-base mb-1">{project.summary}</p>}
+
+      {project.tags && (
+        <div className="flex flex-wrap gap-1 mt-1">
+          {project.tags.map((tag, idx) => (
+            <span key={idx} className="text-xs px-2 py-1 rounded-full bg-white/30">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 
   return (
-    <section className="w-screen h-screen bg-mist py-16 overflow-hidden">
-      <div className="w-full h-full flex flex-col justify-center">
-        {/* Header */}
-        <div className="text-center mb-12 w-full">
-          <h2 className="text-4xl  font-bold">Selected Work</h2>
-          <p className="mt-3 text-ink/70 max-w-md mx-auto">
-            A few projects that balance aesthetics and performance.
-          </p>
-        </div>
+    <section className="w-screen py-16 overflow-hidden">
+      {/* Section title */}
+      <div className="text-center mb-8">
+        <h2 className="text-3xl md:text-4xl font-bold mb-2">Our Projects Showcase</h2>
+        <p className="text-lg md:text-xl text-gray-600">A selection of our finest work in one glance</p>
+      </div>
 
-        {/* Row 1 → scroll RIGHT */}
-        <div className="relative w-full overflow-hidden" style={{ height: "300px" }}>
-          <motion.div
-            ref={row1Ref}
-            className="flex gap-8 absolute"
-            animate={{ x: [-widthRow1, 0] }} // move from left to right
-            transition={{ repeat: Infinity, ease: "linear", duration: speed }}
-          >
-            {[...row1, ...row1].map((p, i) => (
-              <div
-                key={i}
-                className="card min-w-[400px] h-full rounded-3xl p-8 shadow-2xl flex-shrink-0"
-                style={{ backgroundColor: p.color || "#fde68a" }}
-              >
-                <h3 className="text-2xl font-semibold">{p.title}</h3>
-                <p className="text-ink/70 mt-4">{p.summary}</p>
-              </div>
-            ))}
-          </motion.div>
-        </div>
+      {/* Row 1 */}
+      <div className="relative w-full overflow-hidden h-[200px] mb-8">
+        <motion.div
+          ref={row1Ref}
+          className="flex gap-4 absolute"
+          animate={{ x: [-widthRow1, 0, -widthRow1] }}
+          transition={{ repeat: Infinity, ease: "linear", duration: speed }}
+        >
+          {[...row1, ...row1].map((p, i) => (
+            <Card
+              key={`${p.title}-${i}`}
+              project={p}
+              color={pastelColors[i % pastelColors.length]}
+            />
+          ))}
+        </motion.div>
+      </div>
 
-        {/* Row 2 → scroll LEFT */}
-        <div className="relative w-full overflow-hidden mt-12" style={{ height: "300px" }}>
-          <motion.div
-            ref={row2Ref}
-            className="flex gap-8 absolute"
-            animate={{ x: [0, -widthRow2] }} // move left
-            transition={{ repeat: Infinity, ease: "linear", duration: speed }}
-          >
-            {[...row2, ...row2].map((p, i) => (
-              <div
-                key={i}
-                className="card min-w-[400px] h-full rounded-3xl p-8 shadow-2xl flex-shrink-0"
-                style={{ backgroundColor: p.color || "#fecaca" }}
-              >
-                <h3 className="text-2xl font-semibold">{p.title}</h3>
-                <p className="text-ink/70 mt-4">{p.summary}</p>
-              </div>
-            ))}
-          </motion.div>
-        </div>
-
-        {/* CTA Button */}
-        <div className="text-center mt-12 w-full">
-          <Link
-            to="/projects"
-            className="px-6 py-3 rounded-lg bg-black text-white font-medium hover:bg-gray-800 transition"
-          >
-            See all projects
-          </Link>
-        </div>
+      {/* Row 2 */}
+      <div className="relative w-full overflow-hidden h-[200px]">
+        <motion.div
+          ref={row2Ref}
+          className="flex gap-4 absolute"
+          animate={{ x: [0, -widthRow2, 0] }}
+          transition={{ repeat: Infinity, ease: "linear", duration: speed }}
+        >
+          {[...row2, ...row2].map((p, i) => (
+            <Card
+              key={`${p.title}-${i}-row2`}
+              project={p}
+              color={pastelColors[(i + 3) % pastelColors.length]}
+            />
+          ))}
+        </motion.div>
       </div>
     </section>
   );

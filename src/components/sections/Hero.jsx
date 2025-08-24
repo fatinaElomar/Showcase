@@ -26,7 +26,7 @@ export default function Hero() {
           className="font-display  sm:text-6xl  leading-tight"
           style={{ fontFamily: 'Reckless, Georgia, serif' }}
         >
-          For the workflows<br />you can’t compromise
+         I’m <br />Fatina Elomar
         </motion.h1>
 
         <motion.p
@@ -36,14 +36,14 @@ export default function Hero() {
           className="mt-4 text-lg max-w-xl"
           style={{ fontFamily: 'Roobert, -apple-system, BlinkMacSystemFont, Arial, Roboto, Ubuntu, "Helvetica Neue", sans-serif' }}
         >
-          Build and orchestrate intelligent workflows and agents, on the platform security and IT teams love.
+A Full Stack Dev S& Graphic designer
         </motion.p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <MagneticButton className="text-[#7c3aed] border border-[#7c3aed] bg-transparent px-6 py-3 rounded-[1.7rem] font-semibold ">
+          <MagneticButton className="text-[#a678f6] border border-[#7c3aed] bg-transparent px-6 py-3 rounded-[1.7rem] font-semibold ">
             Book a demo
           </MagneticButton>
-          <MagneticButton className="border bg-[#7c3aed] text-[#ffffff] px-6 py-3 rounded-[1.7rem] font-semibold  transition">
+          <MagneticButton className="border bg-[#a678f6] text-[#ffffff] px-6 py-3 rounded-[1.7rem] font-semibold  transition">
             Sign up free
           </MagneticButton>
         </div>

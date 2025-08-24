@@ -23,24 +23,9 @@ export default function Projects() {
   const items = useMemo(() => data.projects.filter(p => filter === 'All' || p.category === filter), [filter])
 
   // Color overlays with different opacities
-  const colorOverlays = [
-    "bg-indigo-500/40",
-    "bg-purple-500/40",
-    "bg-orange-500/40",
-    "bg-pink-500/40",
-    "bg-green-500/40",
-    "bg-teal-500/40"
-  ]
+  const colorOverlays = ["bg-indigo-500/40","bg-purple-500/40","bg-orange-500/40","bg-pink-500/40","bg-green-500/40","bg-teal-500/40"]
 
-  // assign different sizes (like a magazine grid)
-  const sizeClasses = [
-    "row-span-2",  // tall card
-    "col-span-2",  // wide card
-    "row-span-1 col-span-1", // normal
-    "row-span-2 col-span-2", // big block
-    "row-span-1 col-span-1",
-    "row-span-2"
-  ]
+  const sizeClasses = ["row-span-2","col-span-2","row-span-1 col-span-1","row-span-2 col-span-2","row-span-1 col-span-1","row-span-2"]
 
   return (
     <section className="section pt-28">
@@ -49,17 +34,20 @@ export default function Projects() {
 
         {/* Category Filter */}
         <div className="flex flex-wrap gap-2 mb-8">
-          {categories.map(c => (
-            <button
-              key={c}
-              onClick={() => setFilter(c)}
-              className={`px-4 py-2 rounded-full border text-sm font-medium transition
-                ${filter === c ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}
-              `}
-            >
-              {c}
-            </button>
-          ))}
+          {categories.map(c => {
+            const label = c === "C#" ? "C#" : c
+            return (
+              <button
+                key={c}
+                onClick={() => setFilter(c)}
+                className={`px-4 py-2 rounded-full border text-sm font-medium transition
+                  ${filter === c ? 'bg-indigo-600 text-white border-indigo-600' : 'bg-white text-gray-700 border-gray-200 hover:bg-gray-50'}
+                `}
+              >
+                {label}
+              </button>
+            )
+          })}
         </div>
 
         {/* Project Cards */}
@@ -75,26 +63,25 @@ export default function Projects() {
                 transition={{ duration: 0.4, delay: i * 0.05 }}
                 className={`rounded-2xl shadow-sm overflow-hidden relative group ${sizeClasses[i % sizeClasses.length]} hover:-translate-y-1 transition-transform duration-300`}
               >
-                {/* Background Image Container */}
+                {/* Background Image */}
                 <div className="absolute inset-0 overflow-hidden">
-                  {/* Background Image with Zoom Effect */}
                   <div 
+                    aria-label={p.title}
                     className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                    style={{ backgroundImage: `url(${p.image})` }}
+                    style={{ backgroundImage: `url(${p.image || "/images/projects/default.jpg"})` }}
                   />
                 </div>
-                
-                {/* Color Overlay - Matches the card's color */}
+
+                {/* Color Overlay */}
                 <div className={`absolute inset-0 ${colorOverlays[i % colorOverlays.length]} transition-opacity duration-300 group-hover:opacity-50`} />
-                
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
-                
+
                 {/* Content */}
                 <div className="relative h-full flex flex-col justify-end p-6 text-white">
                   <h3 className="text-xl font-semibold">{p.title}</h3>
                   <p className="text-gray-200 mt-2 text-sm line-clamp-2">{p.summary}</p>
-                  
+
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2 mt-3">
                     {p.tags.map(tag => (
@@ -103,7 +90,7 @@ export default function Projects() {
                       </span>
                     ))}
                   </div>
-                  
+
                   {/* Links */}
                   <div className="flex gap-4 mt-6">
                     {p.github && (

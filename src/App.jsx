@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import NoiseBackground from './components/ui/NoiseBackground'
+import Footer from './components/sections/Footer'
 
 export default function App() {
   const [ready, setReady] = useState(false)
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
       </Routes>
+      <Footer/>
     </div>
   )
 }
