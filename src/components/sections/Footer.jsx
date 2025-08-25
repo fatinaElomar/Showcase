@@ -9,10 +9,10 @@ export default function Footer() {
   }
 
   const socialLinks = [
-    { Icon: Linkedin, href: 'https://www.linkedin.com/' },
-    { Icon: Github, href: 'https://github.com/' },
-    { Icon: FaShopify, href: 'https://www.shopify.com/' },
-    { Icon: FaBehance, href: 'https://www.behance.net/' },
+    { Icon: Linkedin, href: 'www.linkedin.com/in/fatina-elomar' },
+    { Icon: Github, href: 'https://github.com/fatinaElomar' },
+    { Icon: FaShopify, href: 'https://community.shopify.com/c/user/viewprofilepage/user-id/1930506' },
+    { Icon: FaBehance, href: 'https://www.behance.net/fatinaelomar' },
     { Icon: Instagram, href: 'https://www.instagram.com/' }
   ]
 
