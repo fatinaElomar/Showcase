@@ -5,7 +5,11 @@ import Sadeeqy from "./assets/images/sadeeqy1.png";
 import Sarnay from "./assets/images/sarnay.png";
 import Unbound from "./assets/images/unbound.png";
 import Eparts from "./assets/images/eparts.png"
-
+import Fekra from "./assets/images/fekra.png"
+import Wizard from "./assets/images/wizard.png"
+import Petbox from "./assets/images/petbox.png"
+import Zconnect from "./assets/images/zconnect.png"
+import Neurologist from "./assets/images/neurologist.png"
 export const data = {
   
   hero: {
@@ -286,7 +290,7 @@ export const data = {
     summary: "Restaurant site with online ordering, reservations, and registration built in React.",
     github: "https://github.com/yourusername/wizard-restaurant",
     link: "https://wizard-resto.netlify.app/signin",
-    image: "/images/projects/react/wizard.jpg",
+    image: Wizard,
     tags: ["React", "JavaScript",  "Tailwind", "Restaurant", "Ordering System"]
   },
   {
@@ -313,7 +317,7 @@ export const data = {
     summary: "React site for an education center displaying courses and registration info.",
     github: "https://github.com/yourusername/fekra",
     link: "https://fekra-info.netlify.app/",
-    image: "/images/projects/react/fekra.jpg",
+    image: Fekra,
     tags: ["React", "JavaScript","Tailwind", "Education"]
   },
   {
@@ -332,7 +336,7 @@ export const data = {
     category: "C#",
     summary: "C# clinic management system for neurologists handling patients and appointments.",
     github: "https://github.com/fatinaElomar/Neurologist",
-    image: "/images/projects/csharp/inventory.jpg",
+    image: Neurologist,
     tags: ["C#", ".NET", "SQL Server", "Healthcare"]
   },
   {
@@ -430,7 +434,7 @@ export const data = {
     category: "UI/UX",
     summary: "UI/UX design for a secure and simple login/authentication flow.",
     link: "https://www.behance.net/gallery/198438653/z-connect-case-study",
-    image: "/images/projects/uiux/foodiez.jpg",
+    image: Zconnect,
     tags: ["UI/UX", "Figma", "Login Flow", "Authentication"]
   },
   {
@@ -438,7 +442,7 @@ export const data = {
     category: "UI/UX",
     summary: "UI/UX for a mobile app providing pet care, shopping, and booking.",
     link: "https://www.behance.net/gallery/205813353/Pet-Shop-website",
-    image: "/images/projects/uiux/finance.jpg",
+    image: Petbox,
     tags: ["UI/UX", "Figma", "Mobile App", "Pet Store"]
   },
   // {
