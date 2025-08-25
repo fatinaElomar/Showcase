@@ -205,8 +205,8 @@ export const data = {
     title: "Sadeeqy",
     category: "Shopify",
     summary: "Online pet shop in KSA offering food, toys, and essentials with custom Shopify features.",
-    github: "https://github.com/yourusername/sadeeqy",
-    link: "https://sadeeqy.com",
+   
+    link: "https://sadeeqy.com/",
     image: Sadeeqy,
     tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Pet Store", "KSA"],
   
@@ -215,20 +215,19 @@ export const data = {
     title: "Aleef",
     category: "Shopify",
     summary: "KSA-based pet store with food and accessories, optimized layout and mobile-friendly Shopify design.",
-    github: "https://github.com/yourusername/aleef",
-    link: "https://aleef.com",
+   
+    link: "https://aleefpartners.com/",
     image: "/images/projects/shopify/aleef.jpg",
     tags: ["Shopify", "Liquid", "E-commerce", "Pet Store", "KSA"],
-    theme: "Saja Shopify Theme"
+   
   },
   {
     title: "Kitty",
     category: "Shopify",
     summary: "Jewellery store in the UK with elegant product showcase and secure checkout on Shopify.",
-    github: "https://github.com/yourusername/kitty",
-    link: "https://kitty-shopify-live-link.com",
+    link: "https://kittyjoyas.com/",
     image: Kitty,
-    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Jewellery", "UK"],
+    tags: ["Shopify", "Liquid","Collaboration", "E-commerce", "Jewellery", "UK"],
    
   },
   {
@@ -236,9 +235,9 @@ export const data = {
     category: "Shopify",
     summary: "UK store selling healthy food and supplements with a clean, modern Shopify design.",
     github: "https://github.com/yourusername/habitual",
-    link: "https://tryhabitual.com",
+    link: "https://www.tryhabitual.com/",
     image: Habitual,
-    tags: ["Shopify", "Liquid","E-commerce", "Health", "Supplements", "UK"],
+    tags: ["Shopify", "Liquid","E-commerce","Collaboration", "Health", "UK"],
    
   },
   {
@@ -255,8 +254,7 @@ export const data = {
     title: "Eparts",
     category: "Shopify",
     summary: "KSA Shopify store for car accessories with structured categories and fast checkout.",
-    github: "https://github.com/yourusername/eparts",
-    link: "https://eparts-shop.com",
+    link: "https://www.epartsmaster.com/",
     image: Eparts,
     tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Automotive", "KSA"],
    
@@ -266,10 +264,10 @@ export const data = {
     category: "Shopify",
     summary: "UK women’s fitness brand selling dumbbell-themed merchandise on Shopify.",
     github: "https://github.com/yourusername/unbound",
-    link: "https://unbound-shop.com",
+    link: "https://works-unbound.myshopify.com/",
     image: Unbound,
     tags: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS", "E-commerce", "Fitness", "UK"],
-    theme: "Saja Shopify Theme"
+   
   },
 
   // React
@@ -277,8 +275,8 @@ export const data = {
     title: "Mehaan",
     category: "React",
     summary: "Corporate React site for an accounting company in Lebanon showcasing services and profile.",
-    github: "https://github.com/yourusername/mehan",
-    link: "https://mehan.com",
+    github: "https://github.com/fatinaelomar/mehan",
+    link: "https://mehaan.netlify.app/",
     image: "/images/projects/react/mehan.jpg",
     tags: ["React", "JavaScript", "HTML", "CSS", "Accounting", "Lebanon"]
   },
@@ -287,7 +285,7 @@ export const data = {
     category: "React",
     summary: "Restaurant site with online ordering, reservations, and registration built in React.",
     github: "https://github.com/yourusername/wizard-restaurant",
-    link: "https://wizard-restaurant.com",
+    link: "https://wizard-resto.netlify.app/signin",
     image: "/images/projects/react/wizard.jpg",
     tags: ["React", "JavaScript",  "Tailwind", "Restaurant", "Ordering System"]
   },
@@ -305,7 +303,7 @@ export const data = {
     category: "React",
     summary: "Lebanese cleaning company site built with React for booking and services.",
     github: "https://github.com/yourusername/cleantime",
-    link: "https://cleantime.com",
+    link: "https://info-cleantime.vercel.app/",
     image: "/images/projects/react/cleantime.jpg",
     tags: ["React", "JavaScript", "Cleaning Services", "Lebanon"]
   },
@@ -314,7 +312,7 @@ export const data = {
     category: "React",
     summary: "React site for an education center displaying courses and registration info.",
     github: "https://github.com/yourusername/fekra",
-    link: "https://fekra.com",
+    link: "https://fekra-info.netlify.app/",
     image: "/images/projects/react/fekra.jpg",
     tags: ["React", "JavaScript","Tailwind", "Education"]
   },
@@ -323,7 +321,7 @@ export const data = {
     category: "React",
     summary: "Creative coffee shop website with a cute UI/UX built using React.",
     github: "https://github.com/yourusername/starwbery",
-    link: "https://starwbery.com",
+    link: "https://farawla.netlify.app/",
     image: "/images/projects/react/starwbery.jpg",
     tags: ["React", "JavaScript", "Tailwind", "Coffee Shop",]
   },
@@ -333,7 +331,7 @@ export const data = {
     title: "Neurologist Click System",
     category: "C#",
     summary: "C# clinic management system for neurologists handling patients and appointments.",
-    github: "https://github.com/yourusername/inventory-manager",
+    github: "https://github.com/fatinaElomar/Neurologist",
     image: "/images/projects/csharp/inventory.jpg",
     tags: ["C#", ".NET", "SQL Server", "Healthcare"]
   },
@@ -351,9 +349,8 @@ export const data = {
     title: "Flur",
     category: "WordPress",
     summary: "WordPress WooCommerce flower store in Lebanon with product display and ordering.",
-    github: "https://github.com/yourusername/flur",
-    link: Flur,
-    image: "/images/projects/wordpress/flur.jpg",
+    link: 'https://flurshop.com/',
+    image: Flur,
     tags: ["WordPress", "PHP", "WooCommerce","Flowers",],
     
   },
@@ -361,8 +358,7 @@ export const data = {
     title: "Sarnay",
     category: "WordPress",
     summary: "Lebanese restaurant site built on WordPress with menu and booking details.",
-    github: "https://github.com/yourusername/sarnay",
-    link: "https://sarnay.com",
+    link: "https://sarnay.com/",
     image: Sarnay,
     tags: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "Restaurant", "Lebanon"],
    
@@ -371,9 +367,8 @@ export const data = {
     title: "Lirarestobar",
     category: "WordPress",
     summary: "WordPress site for a Lebanese restaurant with Instagram integration.",
-    github: "https://github.com/yourusername/lira",
     link: "https://lira.com",
-    image: "/images/projects/wordpress/lira.jpg",
+    image: "https://lirarestobar.sg/",
     tags: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "Restaurant", "Lebanon", "Social Media"],
   
   },
@@ -381,8 +376,7 @@ export const data = {
     title: "Education and Co",
     category: "WordPress",
     summary: "E-commerce site for educational games and toys built with WordPress.",
-    github: "https://github.com/yourusername/education-co",
-    link: "https://educationco.com",
+    link: "https://educationandco.net/",
     image: "/images/projects/wordpress/education.jpg",
     tags: ["WordPress", "PHP", "WooCommerce", "JavaScript", "HTML", "CSS", "Education", "Toys"],
   
@@ -391,10 +385,9 @@ export const data = {
     title: "Embroidery and Stitches",
     category: "WordPress",
     summary: "WordPress store for handmade embroidery and craft products.",
-    github: "https://github.com/yourusername/stitches-beads",
     link: "https://stitchesbeads.com",
     image: "/images/projects/wordpress/stitches.jpg",
-    tags: ["WordPress", "PHP", "WooCommerce", "JavaScript", "HTML", "CSS", "Handmade", "Crafts"],
+    tags: ["WordPress", "PHP", "WooCommerce","Handmade", "Crafts"],
   
   },
   {
@@ -412,7 +405,7 @@ export const data = {
     title: "Mobility Site Design",
     category: "UI/UX",
     summary: "UI/UX design for a mobility-focused website with accessible layouts.",
-    link: "https://figma.com/travelly-app",
+    link: "https://www.figma.com/design/MNjCVt9SGKAwhMahPqZwzk/fatina-elomar-s-team-library?node-id=1-2&t=g2XexwdUda46RlWT-1",
     image: "/images/projects/uiux/travelly.jpg",
     tags: ["UI/UX", "Figma", "Web Design"]
   },
@@ -420,7 +413,7 @@ export const data = {
     title: "Furniture Website Design",
     category: "UI/UX",
     summary: "UI/UX for a furniture e-commerce store with clean product presentation.",
-    link: "https://figma.com/healthify-dashboard",
+    link: "https://www.figma.com/design/cvHvv3kDFmqMAYWGAJ1JUz/furniture-shop?node-id=0-1&t=qgbd5PZAd250SpWN-1.",
     image: "/images/projects/uiux/healthify.jpg",
     tags: ["UI/UX", "Figma", "E-commerce", "Furniture"]
   },
@@ -428,23 +421,23 @@ export const data = {
     title: "Shipping App Design",
     category: "UI/UX",
     summary: "UI/UX for a logistics app focused on usability and tracking flow.",
-    link: "https://figma.com/edulearn",
+    link: "https://www.figma.com/design/ZssFXUlS8HWUgPxfY9BEpG/ShipNow---Shipping-Management-Dashboard?node-id=0-1&t=Ltxm0ZvCxfz5YR9z-1",
     image: "/images/projects/uiux/edulearn.jpg",
     tags: ["UI/UX", "Figma", "App Design", "Shipping"]
   },
   {
-    title: "Login Design",
+    title: "Z-connect",
     category: "UI/UX",
     summary: "UI/UX design for a secure and simple login/authentication flow.",
-    link: "https://figma.com/foodiez-app",
+    link: "https://www.behance.net/gallery/198438653/z-connect-case-study",
     image: "/images/projects/uiux/foodiez.jpg",
     tags: ["UI/UX", "Figma", "Login Flow", "Authentication"]
   },
   {
-    title: "Pet App Design",
+    title: "Pet Shope Design",
     category: "UI/UX",
     summary: "UI/UX for a mobile app providing pet care, shopping, and booking.",
-    link: "https://figma.com/finance-pro",
+    link: "https://www.behance.net/gallery/205813353/Pet-Shop-website",
     image: "/images/projects/uiux/finance.jpg",
     tags: ["UI/UX", "Figma", "Mobile App", "Pet Store"]
   },
