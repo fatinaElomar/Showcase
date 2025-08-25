@@ -122,16 +122,18 @@ export const data = {
         "Gained practical ability to create adaptive web designs"
       ]
     },
-     {
-      "degree": "Graphic designer",
-      "institution": "Mercy Corps",
-      "period": "2021 | 2022",
-      "details": [
-        "Topics: HTML, CSS, Flexbox, Grid, Web Accessibility, and more",
-        "Built hands-on projects to apply responsive design skills",
-        "Gained practical ability to create adaptive web designs"
-      ]
-    },
+    {
+  "degree": "Graphic Designer",
+  "institution": "Mercy Corps",
+  "period": "2021 | 2022",
+  "details": [
+    "Explored principles of visual communication, color theory, and typography",
+    "Worked on branding, logo creation, and layout design for print and digital media",
+    "Gained hands-on experience with Adobe Creative Suite (Photoshop, Illustrator, InDesign)",
+    "Developed creative projects applying design thinking and client-centered solutions"
+  ]
+}
+,
     {
       "degree": "Business English Course",
       "institution": "International Rescue Committee",
