@@ -64,7 +64,7 @@ export default function Nav() {
             href="#contact"
             className="hidden lg:flex items-center gap-3  bg-[#a678f6] text-[#ffffff] font-semibold px-6 py-3 rounded-full" 
           >
-           Contact me
+           Contact
             <span className=" text-white p-1.5 rounded-full">
               <ArrowUpRight size={16} />
             </span>

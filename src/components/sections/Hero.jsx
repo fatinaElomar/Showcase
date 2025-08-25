@@ -1,12 +1,12 @@
-import { motion, useScroll, useTransform } from "framer-motion";
-import MagneticButton from "../ui/MagneticButton";
-import { FaReact, FaFigma } from "react-icons/fa";
-import { SiShopify } from "react-icons/si";
+import { motion, useScroll, useTransform } from "framer-motion"
+import MagneticButton from "../ui/MagneticButton"
+import { FaReact, FaFigma } from "react-icons/fa"
+import { SiShopify } from "react-icons/si"
 
 export default function Hero() {
-  const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 600], [0, 80]);
-  const y2 = useTransform(scrollY, [0, 600], [0, -60]);
+  const { scrollY } = useScroll()
+  const y1 = useTransform(scrollY, [0, 600], [0, 80])
+  const y2 = useTransform(scrollY, [0, 600], [0, -60])
 
   return (
     <section className="relative overflow-hidden">
@@ -59,33 +59,43 @@ export default function Hero() {
         </motion.h1>
 
         {/* Subtitle */}
-       <motion.p
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.7, delay: 0.1 }}
-  className="mt-4 text-lg max-w-xl"
-  style={{
-    fontFamily:
-      'Roobert, -apple-system, BlinkMacSystemFont, Arial, Roboto, Ubuntu, "Helvetica Neue", sans-serif',
-  }}
->
-  A <span>Full-Stack Developer</span> and{" "}
-  <span>Graphic Designer</span> blending{" "}
-  <span >React</span>,{" "}
-  <span >Figma</span>, and{" "}
-  <span >Shopify</span> into sleek, creative digital experiences.
-</motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="mt-4 text-lg max-w-xl"
+          style={{
+            fontFamily:
+              'Roobert, -apple-system, BlinkMacSystemFont, Arial, Roboto, Ubuntu, "Helvetica Neue", sans-serif',
+          }}
+        >
+          A <span>Full-Stack Developer</span> and{" "}
+          <span>Graphic Designer</span> blending <span>React</span>,{" "}
+          <span>Figma</span>, and <span>Shopify</span> into sleek, creative
+          digital experiences.
+        </motion.p>
 
         {/* Call to actions */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4">
-          <MagneticButton className="text-[#a678f6] border border-[#7c3aed] bg-transparent px-6 py-3 rounded-[1.7rem] font-semibold hover:bg-[#f3e8ff] transition">
+          {/* Scroll button */}
+          <MagneticButton
+            href="#showcase"
+            className="text-[#a678f6] border border-[#7c3aed] bg-transparent px-6 py-3 rounded-[1.7rem] font-semibold hover:bg-[#f3e8ff] transition"
+          >
             Show Me the Magic
           </MagneticButton>
-          <MagneticButton className="border bg-[#a678f6] text-white px-6 py-3 rounded-[1.7rem] font-semibold hover:bg-[#925fe4] transition">
+
+          {/* WhatsApp button */}
+          <MagneticButton
+            href="https://wa.me/96171779091"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border bg-[#a678f6] text-white px-6 py-3 rounded-[1.7rem] font-semibold hover:bg-[#925fe4] transition"
+          >
             Let’s Team Up
           </MagneticButton>
         </div>
       </div>
     </section>
-  );
+  )
 }

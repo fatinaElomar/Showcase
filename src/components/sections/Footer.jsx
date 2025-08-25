@@ -117,7 +117,7 @@ export default function Footer() {
         >
           <h4 className="text-sm font-medium mb-2">Want to collaborate?</h4>
           <motion.a
-            href="#contact"
+            href="https://wa.me/96171779091"
             className="text-lg font-semibold"
             whileHover={{ x: 5 }}
           >

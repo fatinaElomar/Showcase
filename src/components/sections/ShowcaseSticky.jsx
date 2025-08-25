@@ -74,7 +74,7 @@ export default function ShowcaseSticky() {
   );
 
   return (
-    <section className="w-screen py-16 overflow-hidden">
+<section id="showcase" className="w-screen py-16 overflow-hidden">
       {/* Section title */}
       <div className="text-center mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">Projects We’re Proud Of</h2>
