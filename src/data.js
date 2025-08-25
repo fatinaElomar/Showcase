@@ -189,303 +189,274 @@ export const data = {
   contacts: { email: 'fatinaelomar3@gmail.com', phone: '+961 70 779 091', location: 'Lebanon | North' 
 
   },
-  projects: [
-    // Shopify
-    {
-      title: "Kitty",
-      category: "Shopify",
-      summary: "Modern Shopify pet store theme.",
-      github: "https://github.com/yourusername/kitty",
-      link: "https://kitty-shopify-live-link.com",
-      image: Kitty,
-      tags: ["E-commerce", "Pets", "Shopify Theme"],
-      theme: "Saja Shopify Theme"
-    },
-    {
-      title: "Try Habitual",
-      category: "Shopify",
-      summary: "Wellness and lifestyle store on Shopify.",
-      github: "https://github.com/yourusername/habitual",
-      link: "https://tryhabitual.com",
-      image: Habitual,
-      tags: ["Lifestyle", "Wellness", "E-commerce"],
-      theme: "Saja Shopify Theme"
-    },
+ projects: [
+  // Shopify
+  {
+    title: "Petopia",
+    category: "Shopify",
+    summary: "Pet store in KSA selling food, accessories, and supplies with a smooth Shopify experience.",
+    github: "https://github.com/yourusername/kitty",
+    link: "https://kitty-shopify-live-link.com",
+    image: Kitty,
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Pet Store", "KSA"],
+    
+  },
+  {
+    title: "Sadeeqy",
+    category: "Shopify",
+    summary: "Online pet shop in KSA offering food, toys, and essentials with custom Shopify features.",
+    github: "https://github.com/yourusername/sadeeqy",
+    link: "https://sadeeqy.com",
+    image: Sadeeqy,
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Pet Store", "KSA"],
+  
+  },
+  {
+    title: "Aleef",
+    category: "Shopify",
+    summary: "KSA-based pet store with food and accessories, optimized layout and mobile-friendly Shopify design.",
+    github: "https://github.com/yourusername/aleef",
+    link: "https://aleef.com",
+    image: "/images/projects/shopify/aleef.jpg",
+    tags: ["Shopify", "Liquid", "E-commerce", "Pet Store", "KSA"],
+    theme: "Saja Shopify Theme"
+  },
+  {
+    title: "Kitty",
+    category: "Shopify",
+    summary: "Jewellery store in the UK with elegant product showcase and secure checkout on Shopify.",
+    github: "https://github.com/yourusername/kitty",
+    link: "https://kitty-shopify-live-link.com",
+    image: Kitty,
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Jewellery", "UK"],
    
-    {
-      title: "Dame",
-      category: "Shopify",
-      summary: "Fashion and accessories Shopify brand.",
-      github: "https://github.com/yourusername/dame",
-      link: "https://dame-shop.com",
-      image: "/images/projects/shopify/dame.jpg",
-      tags: ["Fashion", "Accessories"],
-      theme: "Saja Shopify Theme"
-    },
-     {
-      title: "Eparts (Car Parts Store)",
-      category: "Shopify",
-      summary: "Auto parts Shopify store with custom design.",
-      github: "https://github.com/yourusername/eparts",
-      link: "https://eparts-shop.com",
-      image: Eparts,
-      tags: ["E-commerce", "Cars", "Parts"],
-      theme: "Saja Shopify Theme"
-    },
-    {
-      title: "Boushra Hijabs",
-      category: "Shopify",
-      summary: "Elegant hijabs and modest wear shop.",
-      github: "https://github.com/yourusername/boushra-hijabs",
-      link: "https://boushrahijabs.com",
-      image: "/images/projects/shopify/boushra.jpg",
-      tags: ["UAE", "Fashion", "E-commerce"],
-      theme: "Saja Shopify Theme"
-    },
-    {
-      title: "Unbound",
-      category: "Shopify",
-      summary: "Minimalist Shopify brand for essentials.",
-      github: "https://github.com/yourusername/unbound",
-      link: "https://unbound-shop.com",
-      image: Unbound,
-      tags: ["UK", "Essentials", "Shopify"],
-      theme: "Saja Shopify Theme"
-    },
-    {
-      title: "Sadeeqy",
-      category: "Shopify",
-      summary: "Social community-based Shopify experience.",
-      github: "https://github.com/yourusername/sadeeqy",
-      link: "https://sadeeqy.com",
-      image: Sadeeqy,
-      tags: ["Community", "Social", "Shopify"],
-      theme: "Saja Shopify Theme"
-    },
-    {
-      title: "Aleef",
-      category: "Shopify",
-      summary: "Pet food & care Shopify platform.",
-      github: "https://github.com/yourusername/aleef",
-      link: "https://aleef.com",
-      image: "/images/projects/shopify/aleef.jpg",
-      tags: ["Pets", "Food", "E-commerce"],
-      theme: "Saja Shopify Theme"
-    },
-    {
-      title: "Catu",
-      category: "Shopify",
-      summary: "Trendy Shopify fashion marketplace.",
-      github: "https://github.com/yourusername/catu",
-      link: "https://catu.com",
-      image: "/images/projects/shopify/catu.jpg",
-      tags: ["Fashion", "Marketplace"],
-      theme: "Saja Shopify Theme"
-    },
+  },
+  {
+    title: "TryHabitual",
+    category: "Shopify",
+    summary: "UK store selling healthy food and supplements with a clean, modern Shopify design.",
+    github: "https://github.com/yourusername/habitual",
+    link: "https://tryhabitual.com",
+    image: Habitual,
+    tags: ["Shopify", "Liquid","E-commerce", "Health", "Supplements", "UK"],
+   
+  },
+  {
+    title: "BoushraHijabs",
+    category: "Shopify",
+    summary: "UAE fashion store for abayas and hijabs with elegant Shopify product presentation.",
+    github: "https://github.com/yourusername/boushra-hijabs",
+    link: "https://boushrahijabs.com",
+    image: "/images/projects/shopify/boushra.jpg",
+    tags: ["Shopify", "Liquid", "E-commerce", "Fashion", "UAE"],
+   
+  },
+  {
+    title: "Eparts",
+    category: "Shopify",
+    summary: "KSA Shopify store for car accessories with structured categories and fast checkout.",
+    github: "https://github.com/yourusername/eparts",
+    link: "https://eparts-shop.com",
+    image: Eparts,
+    tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Automotive", "KSA"],
+   
+  },
+  {
+    title: "Unbound",
+    category: "Shopify",
+    summary: "UK women’s fitness brand selling dumbbell-themed merchandise on Shopify.",
+    github: "https://github.com/yourusername/unbound",
+    link: "https://unbound-shop.com",
+    image: Unbound,
+    tags: ["Shopify", "Liquid", "JavaScript", "HTML", "CSS", "E-commerce", "Fitness", "UK"],
+    theme: "Saja Shopify Theme"
+  },
 
-    // WordPress
-    {
-      title: "Sarnay",
-      category: "WordPress",
-      summary: "WordPress blog and portfolio.",
-      github: "https://github.com/yourusername/sarnay",
-      link: "https://sarnay.com",
-      image: Sarnay,
-      tags: ["Blog", "Portfolio", "WordPress Theme"],
-      plugin: "Street Banner Plugin"
-    },
-    {
-      title: "Flur",
-      category: "WordPress",
-      summary: "Creative WordPress agency website.",
-      github: "https://github.com/yourusername/flur",
-      link: Flur,
-      image: "/images/projects/wordpress/flur.jpg",
-      tags: ["Agency", "Creative"],
-      plugin: "Street Banner Plugin"
-    },
-    {
-      title: "Education & Co",
-      category: "WordPress",
-      summary: "Educational WordPress platform.",
-      github: "https://github.com/yourusername/education-co",
-      link: "https://educationco.com",
-      image: "/images/projects/wordpress/education.jpg",
-      tags: ["Education", "Learning"],
-      plugin: "Street Banner Plugin"
-    },
-    {
-      title: "Lira Resto Bar",
-      category: "WordPress",
-      summary: "Restaurant and bar WordPress site.",
-      github: "https://github.com/yourusername/lira",
-      link: "https://lira.com",
-      image: "/images/projects/wordpress/lira.jpg",
-      tags: ["Food", "Restaurant", "Bar"],
-      plugin: "Street Banner Plugin"
-    },
-    {
-      title: "Stitches Beads",
-      category: "WordPress",
-      summary: "Handmade crafts and jewelry site.",
-      github: "https://github.com/yourusername/stitches-beads",
-      link: "https://stitchesbeads.com",
-      image: "/images/projects/wordpress/stitches.jpg",
-      tags: ["Handmade", "Jewelry", "Crafts"],
-      plugin: "Street Banner Plugin"
-    },
+  // React
+  {
+    title: "Mehaan",
+    category: "React",
+    summary: "Corporate React site for an accounting company in Lebanon showcasing services and profile.",
+    github: "https://github.com/yourusername/mehan",
+    link: "https://mehan.com",
+    image: "/images/projects/react/mehan.jpg",
+    tags: ["React", "JavaScript", "HTML", "CSS", "Accounting", "Lebanon"]
+  },
+  {
+    title: "Wizard",
+    category: "React",
+    summary: "Restaurant site with online ordering, reservations, and registration built in React.",
+    github: "https://github.com/yourusername/wizard-restaurant",
+    link: "https://wizard-restaurant.com",
+    image: "/images/projects/react/wizard.jpg",
+    tags: ["React", "JavaScript",  "Tailwind", "Restaurant", "Ordering System"]
+  },
+  {
+    title: "Interior Portfolio",
+    category: "React",
+    summary: "React portfolio site for an interior designer with galleries and modern UI.",
+    github: "https://github.com/yourusername/interior-design",
+    link: "https://interiorportfolio.com",
+    image: "/images/projects/react/interior.jpg",
+    tags: ["React", "JavaScript", "Tailwind", "Portfolio", "Interior Design"]
+  },
+  {
+    title: "CleanTime",
+    category: "React",
+    summary: "Lebanese cleaning company site built with React for booking and services.",
+    github: "https://github.com/yourusername/cleantime",
+    link: "https://cleantime.com",
+    image: "/images/projects/react/cleantime.jpg",
+    tags: ["React", "JavaScript", "Cleaning Services", "Lebanon"]
+  },
+  {
+    title: "Fekra",
+    category: "React",
+    summary: "React site for an education center displaying courses and registration info.",
+    github: "https://github.com/yourusername/fekra",
+    link: "https://fekra.com",
+    image: "/images/projects/react/fekra.jpg",
+    tags: ["React", "JavaScript","Tailwind", "Education"]
+  },
+  {
+    title: "Strawberry",
+    category: "React",
+    summary: "Creative coffee shop website with a cute UI/UX built using React.",
+    github: "https://github.com/yourusername/starwbery",
+    link: "https://starwbery.com",
+    image: "/images/projects/react/starwbery.jpg",
+    tags: ["React", "JavaScript", "Tailwind", "Coffee Shop",]
+  },
 
-    // React
-    {
-      title: "Fekra (Education Center)",
-      category: "React",
-      summary: "React web app for education center.",
-      github: "https://github.com/yourusername/fekra",
-      link: "https://fekra.com",
-      image: "/images/projects/react/fekra.jpg",
-      tags: ["Education", "Web App", "React"]
-    },
-    {
-      title: "Wizard Restaurant",
-      category: "React",
-      summary: "Modern restaurant web app.",
-      github: "https://github.com/yourusername/wizard-restaurant",
-      link: "https://wizard-restaurant.com",
-      image: "/images/projects/react/wizard.jpg",
-      tags: ["Restaurant", "Food", "React"]
-    },
-    {
-      title: "Starwbery",
-      category: "React",
-      summary: "React e-commerce project for desserts.",
-      github: "https://github.com/yourusername/starwbery",
-      link: "https://starwbery.com",
-      image: "/images/projects/react/starwbery.jpg",
-      tags: ["E-commerce", "Desserts", "React"]
-    },
-    {
-      title: "Pet Store",
-      category: "React",
-      summary: "Cute React pet store website.",
-      github: "https://github.com/yourusername/petstore",
-      link: "https://petstore.com",
-      image: "/images/projects/react/petstore.jpg",
-      tags: ["Pets", "E-commerce", "React"]
-    },
-    {
-      title: "Mehan",
-      category: "React",
-      summary: "React project for services platform.",
-      github: "https://github.com/yourusername/mehan",
-      link: "https://mehan.com",
-      image: "/images/projects/react/mehan.jpg",
-      tags: ["Services", "Business", "React"]
-    },
-    {
-      title: "Interior Design Portfolio",
-      category: "React",
-      summary: "React portfolio for interior design.",
-      github: "https://github.com/yourusername/interior-design",
-      link: "https://interiorportfolio.com",
-      image: "/images/projects/react/interior.jpg",
-      tags: ["Portfolio", "Interior Design", "React"]
-    },
-    {
-      title: "CleanTime",
-      category: "React",
-      summary: "React app for cleaning services.",
-      github: "https://github.com/yourusername/cleantime",
-      link: "https://cleantime.com",
-      image: "/images/projects/react/cleantime.jpg",
-      tags: ["Cleaning", "Services", "React"]
-    },
+  // C#
+  {
+    title: "Neurologist Click System",
+    category: "C#",
+    summary: "C# clinic management system for neurologists handling patients and appointments.",
+    github: "https://github.com/yourusername/inventory-manager",
+    image: "/images/projects/csharp/inventory.jpg",
+    tags: ["C#", ".NET", "SQL Server", "Healthcare"]
+  },
+  {
+    title: "Lawyers System",
+    category: "C#",
+    summary: "C# case and client management software for law firms with secure records.",
+    github: "https://github.com/yourusername/library-system",
+    image: "/images/projects/csharp/library.jpg",
+    tags: ["C#", ".NET", "SQL Server", "Desktop App", "Legal"]
+  },
 
-    // UI/UX
-    {
-      title: "Travelly App UI",
-      category: "UI/UX",
-      summary: "Mobile travel booking app prototype designed in Figma.",
-      link: "https://figma.com/travelly-app",
-      image: "/images/projects/uiux/travelly.jpg",
-      tags: ["UI", "UX", "Figma", "Mobile"]
-    },
-    {
-      title: "Healthify Dashboard",
-      category: "UI/UX",
-      summary: "Healthcare admin dashboard with accessibility-first design.",
-      link: "https://figma.com/healthify-dashboard",
-      image: "/images/projects/uiux/healthify.jpg",
-      tags: ["UI", "Dashboard", "Healthcare"]
-    },
-    {
-      title: "EduLearn Platform",
-      category: "UI/UX",
-      summary: "Learning management system UI kit in Figma.",
-      link: "https://figma.com/edulearn",
-      image: "/images/projects/uiux/edulearn.jpg",
-      tags: ["Education", "UI Kit", "Figma"]
-    },
-    {
-      title: "Foodiez App",
-      category: "UI/UX",
-      summary: "Food delivery app with clean UX flows.",
-      link: "https://figma.com/foodiez-app",
-      image: "/images/projects/uiux/foodiez.jpg",
-      tags: ["Food", "Delivery", "Mobile UI"]
-    },
-    {
-      title: "Finance Pro",
-      category: "UI/UX",
-      summary: "Banking and finance dashboard UI system.",
-      link: "https://figma.com/finance-pro",
-      image: "/images/projects/uiux/finance.jpg",
-      tags: ["Finance", "UI", "Dashboard"]
-    },
-    {
-      title: "Portfolio Redesign",
-      category: "UI/UX",
-      summary: "Personal portfolio website concept focusing on storytelling.",
-      link: "https://figma.com/portfolio-redesign",
-      image: "/images/projects/uiux/portfolio.jpg",
-      tags: ["Portfolio", "Website", "UX"]
-    },
-    {
-      title: "Wellness App",
-      category: "UI/UX",
-      summary: "Meditation and fitness app prototype.",
-      link: "https://figma.com/wellness-app",
-      image: "/images/projects/uiux/wellness.jpg",
-      tags: ["Wellness", "Mobile", "Figma"]
-    },
+  // WordPress
+  {
+    title: "Flur",
+    category: "WordPress",
+    summary: "WordPress WooCommerce flower store in Lebanon with product display and ordering.",
+    github: "https://github.com/yourusername/flur",
+    link: Flur,
+    image: "/images/projects/wordpress/flur.jpg",
+    tags: ["WordPress", "PHP", "WooCommerce","Flowers",],
+    
+  },
+  {
+    title: "Sarnay",
+    category: "WordPress",
+    summary: "Lebanese restaurant site built on WordPress with menu and booking details.",
+    github: "https://github.com/yourusername/sarnay",
+    link: "https://sarnay.com",
+    image: Sarnay,
+    tags: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "Restaurant", "Lebanon"],
+   
+  },
+  {
+    title: "Lirarestobar",
+    category: "WordPress",
+    summary: "WordPress site for a Lebanese restaurant with Instagram integration.",
+    github: "https://github.com/yourusername/lira",
+    link: "https://lira.com",
+    image: "/images/projects/wordpress/lira.jpg",
+    tags: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "Restaurant", "Lebanon", "Social Media"],
+  
+  },
+  {
+    title: "Education and Co",
+    category: "WordPress",
+    summary: "E-commerce site for educational games and toys built with WordPress.",
+    github: "https://github.com/yourusername/education-co",
+    link: "https://educationco.com",
+    image: "/images/projects/wordpress/education.jpg",
+    tags: ["WordPress", "PHP", "WooCommerce", "JavaScript", "HTML", "CSS", "Education", "Toys"],
+  
+  },
+  {
+    title: "Embroidery and Stitches",
+    category: "WordPress",
+    summary: "WordPress store for handmade embroidery and craft products.",
+    github: "https://github.com/yourusername/stitches-beads",
+    link: "https://stitchesbeads.com",
+    image: "/images/projects/wordpress/stitches.jpg",
+    tags: ["WordPress", "PHP", "WooCommerce", "JavaScript", "HTML", "CSS", "Handmade", "Crafts"],
+  
+  },
+  {
+    title: "Street Banner Plugin",
+    category: "WordPress",
+    summary: "Custom WordPress plugin to manage and display street banners.",
+    github: "https://github.com/yourusername/banner-plugin",
+    link: "https://wordpress.org/plugins/custom-banner-plugin",
+    image: "/images/projects/plugin/banner.jpg",
+    tags: ["WordPress", "PHP", "Plugin Development", "JavaScript"]
+  },
 
-    // C#
-    {
-      title: "Inventory Manager",
-      category: "C#",
-      summary: "Desktop application for inventory management using C# and .NET.",
-      github: "https://github.com/yourusername/inventory-manager",
-      image: "/images/projects/csharp/inventory.jpg",
-      tags: [".NET", "C#", "Desktop App"]
-    },
-    {
-      title: "Library System",
-      category: "C#",
-      summary: "C# Windows Forms project for book rentals and student records.",
-      github: "https://github.com/yourusername/library-system",
-      image: "/images/projects/csharp/library.jpg",
-      tags: [".NET", "C#", "Windows Forms"]
-    },
+  // UI/UX
+  {
+    title: "Mobility Site Design",
+    category: "UI/UX",
+    summary: "UI/UX design for a mobility-focused website with accessible layouts.",
+    link: "https://figma.com/travelly-app",
+    image: "/images/projects/uiux/travelly.jpg",
+    tags: ["UI/UX", "Figma", "Web Design"]
+  },
+  {
+    title: "Furniture Website Design",
+    category: "UI/UX",
+    summary: "UI/UX for a furniture e-commerce store with clean product presentation.",
+    link: "https://figma.com/healthify-dashboard",
+    image: "/images/projects/uiux/healthify.jpg",
+    tags: ["UI/UX", "Figma", "E-commerce", "Furniture"]
+  },
+  {
+    title: "Shipping App Design",
+    category: "UI/UX",
+    summary: "UI/UX for a logistics app focused on usability and tracking flow.",
+    link: "https://figma.com/edulearn",
+    image: "/images/projects/uiux/edulearn.jpg",
+    tags: ["UI/UX", "Figma", "App Design", "Shipping"]
+  },
+  {
+    title: "Login Design",
+    category: "UI/UX",
+    summary: "UI/UX design for a secure and simple login/authentication flow.",
+    link: "https://figma.com/foodiez-app",
+    image: "/images/projects/uiux/foodiez.jpg",
+    tags: ["UI/UX", "Figma", "Login Flow", "Authentication"]
+  },
+  {
+    title: "Pet App Design",
+    category: "UI/UX",
+    summary: "UI/UX for a mobile app providing pet care, shopping, and booking.",
+    link: "https://figma.com/finance-pro",
+    image: "/images/projects/uiux/finance.jpg",
+    tags: ["UI/UX", "Figma", "Mobile App", "Pet Store"]
+  },
+  {
+    title: "Restaurant Site Design",
+    category: "UI/UX",
+    summary: "UI/UX design for restaurant websites with menus and booking features.",
+    link: "https://figma.com/portfolio-redesign",
+    image: "/images/projects/uiux/portfolio.jpg",
+    tags: ["UI/UX", "Figma", "Restaurant Website"]
+  }
+]
 
-    // Plugin
-    {
-      title: "Custom Banner Plugin",
-      category: "Plugin",
-      summary: "WordPress plugin for customizable banners with scheduling options.",
-      github: "https://github.com/yourusername/banner-plugin",
-      link: "https://wordpress.org/plugins/custom-banner-plugin",
-      image: "/images/projects/plugin/banner.jpg",
-      tags: ["WordPress", "Plugin", "Banner"]
-    },
-  ]
 
 }

@@ -89,7 +89,3 @@ li {
   line-height: 1.5rem;
 }
 
-/* Dark mode example */
-body.dark {
-  @apply bg-ink text-white;
-}

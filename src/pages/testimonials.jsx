@@ -73,7 +73,7 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-5xl font-extrabold"
         >
-          The say
+        Yup, They Said That
         </motion.h2>
       </div>
 

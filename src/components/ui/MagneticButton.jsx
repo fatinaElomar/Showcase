@@ -22,7 +22,7 @@ export default function MagneticButton({ children, className='', ...props }) {
       onMouseMove={handleMouse}
       onMouseLeave={reset}
       style={{ x, y, rotateX, rotateY }}
-      className={`inline-flex items-center gap-2 rounded-2xl px-6 py-3 bg-ink text-white shadow-glass will-change-transform ${className}`}
+      className={`inline-flex items-center gap-2 rounded-2xl px-6 py-3   shadow-glass will-change-transform ${className}`}
       {...props}
     >
       {children}

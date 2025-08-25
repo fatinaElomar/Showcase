@@ -14,7 +14,7 @@ const pastelColors = [
   "#FFC1C1", // light pink
   "#c5d7c5", //  green
   "#c9aff6", //  purple
-  "#D9F9D9", // orange
+  "#c5d7c5", // green
   "#FBCFFB", // light magenta
   "#FFE4B5", // moccasin
   "#E0CFFF"  // lavender
@@ -77,8 +77,8 @@ export default function ShowcaseSticky() {
     <section className="w-screen py-16 overflow-hidden">
       {/* Section title */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">Our Projects Showcase</h2>
-        <p className="text-lg md:text-xl text-gray-600">A selection of our finest work in one glance</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-2">Projects We’re Proud Of</h2>
+        
       </div>
 
       {/* Row 1 */}
