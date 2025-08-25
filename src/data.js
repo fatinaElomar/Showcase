@@ -441,14 +441,14 @@ export const data = {
     image: "/images/projects/uiux/finance.jpg",
     tags: ["UI/UX", "Figma", "Mobile App", "Pet Store"]
   },
-  {
-    title: "Restaurant Site Design",
-    category: "UI/UX",
-    summary: "UI/UX design for restaurant websites with menus and booking features.",
-    link: "https://figma.com/portfolio-redesign",
-    image: "/images/projects/uiux/portfolio.jpg",
-    tags: ["UI/UX", "Figma", "Restaurant Website"]
-  }
+  // {
+  //   title: "Restaurant Site Design",
+  //   category: "UI/UX",
+  //   summary: "UI/UX design for restaurant websites with menus and booking features.",
+  //   link: "https://figma.com/portfolio-redesign",
+  //   image: "/images/projects/uiux/portfolio.jpg",
+  //   tags: ["UI/UX", "Figma", "Restaurant Website"]
+  // }
 ]
 
 
