@@ -10,6 +10,8 @@ import Wizard from "./assets/images/wizard.png"
 import Petbox from "./assets/images/petbox.png"
 import Zconnect from "./assets/images/zconnect.png"
 import Neurologist from "./assets/images/neurologist.png"
+import Boushra from "./assets/images/boushra.png"
+import Furniture from "./assets/images/furniture.png"
 export const data = {
   
   hero: {
@@ -30,9 +32,9 @@ export const data = {
     { 
       role: 'Web Developer', 
       company: 'DEVANCY (Remote)', 
-      period: '2024 | 2025',
+      period: '2024 | Present',
       details: [
-        'Developed customized Shopify themes and WordPress plugins',
+        'Developed customized Shopify themes',
         'Integrated APIs and payment gateways',
         'Optimized website loading performance'
       ]
@@ -252,7 +254,7 @@ export const data = {
     summary: "UAE fashion store for abayas and hijabs with elegant Shopify product presentation.",
     github: "https://github.com/yourusername/boushra-hijabs",
     link: "https://boushrahijabs.com",
-    image: "/images/projects/shopify/boushra.jpg",
+    image: Boushra,
     tags: ["Shopify", "Liquid", "E-commerce", "Fashion", "UAE"],
    
   },
@@ -420,7 +422,7 @@ export const data = {
     category: "UI/UX",
     summary: "UI/UX for a furniture e-commerce store with clean product presentation.",
     link: "https://www.figma.com/design/cvHvv3kDFmqMAYWGAJ1JUz/furniture-shop?node-id=0-1&t=qgbd5PZAd250SpWN-1.",
-    image: "/images/projects/uiux/healthify.jpg",
+    image:Furniture,
     tags: ["UI/UX", "Figma", "E-commerce", "Furniture"]
   },
   {
