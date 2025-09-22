@@ -4,14 +4,26 @@ import Habitual from "./assets/images/habitual.png";
 import Sadeeqy from "./assets/images/sadeeqy1.png";
 import Sarnay from "./assets/images/sarnay.png";
 import Unbound from "./assets/images/unbound.png";
+import Aleef from "./assets/images/aleef.png"
 import Eparts from "./assets/images/eparts.png"
+import lira from "./assets/images/lira.png"
 import Fekra from "./assets/images/fekra.png"
 import Wizard from "./assets/images/wizard.png"
+import mobility from "./assets/images/mobility.png"
+import clean from "./assets/images/clean.png"
+import Mehan from "./assets/images/mehan.png"
+import farawla from "./assets/images/farawla.png"
+import banner from "./assets/images/banner.jpg"
+import shipping from "./assets/images/shipping.png"
 import Petbox from "./assets/images/petbox.png"
 import Zconnect from "./assets/images/zconnect.png"
+import educ  from "./assets/images/educ.png"
 import Neurologist from "./assets/images/neurologist.png"
 import Boushra from "./assets/images/boushra.png"
 import Furniture from "./assets/images/furniture.png"
+import catu from "./assets/images/catu.png"
+import lawyer from "./assets/images/lawyer.png"
+import interior from "./assets/images/interior.png"
 export const data = {
   
   hero: {
@@ -198,14 +210,13 @@ export const data = {
 
   },
  projects: [
-  // Shopify
+  // ShopifyF
   {
-    title: "Petopia",
+    title: "Catu",
     category: "Shopify",
     summary: "Pet store in KSA selling food, accessories, and supplies with a smooth Shopify experience.",
-    github: "https://github.com/yourusername/kitty",
-    link: "https://kitty-shopify-live-link.com",
-    image: Kitty,
+    link: "https://catu-store.com/",
+    image: catu,
     tags: ["Shopify", "Liquid", "JavaScript", "E-commerce", "Pet Store", "KSA"],
     
   },
@@ -225,7 +236,7 @@ export const data = {
     summary: "KSA-based pet store with food and accessories, optimized layout and mobile-friendly Shopify design.",
    
     link: "https://aleefpartners.com/",
-    image: "/images/projects/shopify/aleef.jpg",
+    image:Aleef,
     tags: ["Shopify", "Liquid", "E-commerce", "Pet Store", "KSA"],
    
   },
@@ -285,7 +296,7 @@ export const data = {
     summary: "Corporate React site for an accounting company in Lebanon showcasing services and profile.",
     github: "https://github.com/fatinaelomar/mehan",
     link: "https://mehaan.netlify.app/",
-    image: "/images/projects/react/mehan.jpg",
+    image:Mehan ,
     tags: ["React", "JavaScript", "HTML", "CSS", "Accounting", "Lebanon"]
   },
   {
@@ -293,7 +304,7 @@ export const data = {
     category: "React",
     summary: "Restaurant site with online ordering, reservations, and registration built in React.",
     github: "https://github.com/yourusername/wizard-restaurant",
-    link: "https://wizard-resto.netlify.app/signin",
+    link: "https://wizard-resto.netlify.app/",
     image: Wizard,
     tags: ["React", "JavaScript",  "Tailwind", "Restaurant", "Ordering System"]
   },
@@ -302,8 +313,8 @@ export const data = {
     category: "React",
     summary: "React portfolio site for an interior designer with galleries and modern UI.",
     github: "https://github.com/yourusername/interior-design",
-    link: "https://interiorportfolio.com",
-    image: "/images/projects/react/interior.jpg",
+    link: "https://interior-portfolio.netlify.app/",
+    image:interior,
     tags: ["React", "JavaScript", "Tailwind", "Portfolio", "Interior Design"]
   },
   {
@@ -312,7 +323,7 @@ export const data = {
     summary: "Lebanese cleaning company site built with React for booking and services.",
     github: "https://github.com/yourusername/cleantime",
     link: "https://info-cleantime.vercel.app/",
-    image: "/images/projects/react/cleantime.jpg",
+    image: clean,
     tags: ["React", "JavaScript", "Cleaning Services", "Lebanon"]
   },
   {
@@ -330,7 +341,7 @@ export const data = {
     summary: "Creative coffee shop website with a cute UI/UX built using React.",
     github: "https://github.com/yourusername/starwbery",
     link: "https://farawla.netlify.app/",
-    image: "/images/projects/react/starwbery.jpg",
+    image: farawla,
     tags: ["React", "JavaScript", "Tailwind", "Coffee Shop",]
   },
 
@@ -347,9 +358,9 @@ export const data = {
     title: "Lawyers System",
     category: "C#",
     summary: "C# case and client management software for law firms with secure records.",
-    github: "https://github.com/yourusername/library-system",
-    image: "/images/projects/csharp/library.jpg",
-    tags: ["C#", ".NET", "SQL Server", "Desktop App", "Legal"]
+    github: "https://github.com/fatinaElomar/OfficeMS",
+    image: lawyer,
+    tags: ["C#", ".NET", "SQL Server", "Desktop App", "Legal"," React, tailwind "]
   },
 
   // WordPress
@@ -376,35 +387,35 @@ export const data = {
     category: "WordPress",
     summary: "WordPress site for a Lebanese restaurant with Instagram integration.",
     link: "https://lira.com",
-    image: "https://lirarestobar.sg/",
+    image: lira,
     tags: ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "Restaurant", "Lebanon", "Social Media"],
   
   },
   {
-    title: "Education and Co",
+    title: "EducationandCo",
     category: "WordPress",
     summary: "E-commerce site for educational games and toys built with WordPress.",
     link: "https://educationandco.net/",
-    image: "/images/projects/wordpress/education.jpg",
+    image: educ,
     tags: ["WordPress", "PHP", "WooCommerce", "JavaScript", "HTML", "CSS", "Education", "Toys"],
   
   },
-  {
-    title: "Embroidery and Stitches",
-    category: "WordPress",
-    summary: "WordPress store for handmade embroidery and craft products.",
-    link: "https://stitchesbeads.com",
-    image: "/images/projects/wordpress/stitches.jpg",
-    tags: ["WordPress", "PHP", "WooCommerce","Handmade", "Crafts"],
+  // {
+  //   title: "Embroidery and Stitches",
+  //   category: "WordPress",
+  //   summary: "WordPress store for handmade embroidery and craft products.",
+  //   link: "https://stitchesbeads.com",
+  //   image: "/images/projects/wordpress/stitches.jpg",
+  //   tags: ["WordPress", "PHP", "WooCommerce","Handmade", "Crafts"],
   
-  },
+  // },
   {
     title: "Street Banner Plugin",
     category: "WordPress",
     summary: "Custom WordPress plugin to manage and display street banners.",
     github: "https://github.com/yourusername/banner-plugin",
     link: "https://wordpress.org/plugins/custom-banner-plugin",
-    image: "/images/projects/plugin/banner.jpg",
+    image: banner,
     tags: ["WordPress", "PHP", "Plugin Development", "JavaScript"]
   },
 
@@ -414,7 +425,7 @@ export const data = {
     category: "UI/UX",
     summary: "UI/UX design for a mobility-focused website with accessible layouts.",
     link: "https://www.figma.com/design/MNjCVt9SGKAwhMahPqZwzk/fatina-elomar-s-team-library?node-id=1-2&t=g2XexwdUda46RlWT-1",
-    image: "/images/projects/uiux/travelly.jpg",
+    image: mobility,
     tags: ["UI/UX", "Figma", "Web Design"]
   },
   {
@@ -430,7 +441,7 @@ export const data = {
     category: "UI/UX",
     summary: "UI/UX for a logistics app focused on usability and tracking flow.",
     link: "https://www.figma.com/design/ZssFXUlS8HWUgPxfY9BEpG/ShipNow---Shipping-Management-Dashboard?node-id=0-1&t=Ltxm0ZvCxfz5YR9z-1",
-    image: "/images/projects/uiux/edulearn.jpg",
+    image: shipping,
     tags: ["UI/UX", "Figma", "App Design", "Shipping"]
   },
   {
