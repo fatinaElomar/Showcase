@@ -155,7 +155,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-white/70">
-          © {new Date().getFullYear()} | Designed & Developed
+          © {new Date().getFullYear()} | Designed & Developed by Fatina
         </p>
       </motion.div>
     </footer>
