@@ -33,7 +33,6 @@ export default function Nav() {
 
       <div className="backdrop-blur">
         <nav className="container-responsive flex items-center justify-between py-4">
-          
           {/* Logo */}
           <Link to="/" className="font-extrabold text-2xl tracking-tight">
             Fatina
@@ -41,11 +40,12 @@ export default function Nav() {
 
           {/* Center pill navigation */}
           <div className="hidden lg:flex items-center">
-            <div className="flex  rounded-full px-2 py-1">
+            <div className="flex rounded-full px-2 py-1">
               {links.map((l) => (
                 <NavLink
                   key={l.to}
                   to={l.to}
+                  onClick={() => window.scrollTo(0, 0)} // 👈 scroll to top
                   className={({ isActive }) =>
                     "px-5 py-2 rounded-full font-medium transition " +
                     (isActive
@@ -62,10 +62,10 @@ export default function Nav() {
           {/* CTA button */}
           <a
             href="#contact"
-            className="hidden lg:flex items-center gap-3  bg-[#a678f6] text-[#ffffff] font-semibold px-6 py-3 rounded-full" 
+            className="hidden lg:flex items-center gap-3 bg-[#a678f6] text-[#ffffff] font-semibold px-6 py-3 rounded-full"
           >
-           Contact
-            <span className=" text-white p-1.5 rounded-full">
+            Contact
+            <span className="text-white p-1.5 rounded-full">
               <ArrowUpRight size={16} />
             </span>
           </a>
@@ -94,7 +94,10 @@ export default function Nav() {
               <NavLink
                 key={l.to}
                 to={l.to}
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  window.scrollTo(0, 0); // 👈 scroll to top & close menu
+                }}
                 className="px-3 py-3 rounded-lg hover:bg-gray-100"
               >
                 {l.label}
