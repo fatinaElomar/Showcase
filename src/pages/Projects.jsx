@@ -70,12 +70,18 @@ export default function Projects() {
                 transition={{ duration: 0.4, delay: i * 0.05 }}
                 className="relative group rounded-xl sm:rounded-2xl shadow-sm overflow-hidden hover:-translate-y-1 transition-transform duration-300"
               >
-                {/* Image */}
-               <img
-  src={p.image || "/images/projects/default.jpg"}
-  alt={p.title}
-  className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110"
-/>
+                {/* Image or fallback */}
+                {p.image ? (
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                ) : (
+                  <div className="w-full h-56 sm:h-64 md:h-72 lg:h-80 flex items-center justify-center bg-gradient-to-br from-indigo-500 to-purple-600 text-white text-lg sm:text-xl font-semibold">
+                    {p.title}
+                  </div>
+                )}
 
                 {/* Color Overlay */}
                 <div className={`absolute inset-0 ${colorOverlays[i % colorOverlays.length]} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />

@@ -142,10 +142,16 @@ export default function Footer() {
             F.O
           </motion.div>
           <div className="flex flex-wrap justify-center sm:justify-start gap-4 text-white/80">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+            <a href="/">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/resume">Resume</a>
+            <a
+  href="https://wa.me/96171779091"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Contact
+</a>
           </div>
         </div>
         <p className="text-white/70">

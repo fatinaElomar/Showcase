@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
-import { ArrowUpRight } from "lucide-react"; // for arrow icon
+import { ArrowUpRight } from "lucide-react"; 
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
@@ -45,7 +45,7 @@ export default function Nav() {
                 <NavLink
                   key={l.to}
                   to={l.to}
-                  onClick={() => window.scrollTo(0, 0)} // 👈 scroll to top
+                  onClick={() => window.scrollTo(0, 0)} 
                   className={({ isActive }) =>
                     "px-5 py-2 rounded-full font-medium transition " +
                     (isActive
